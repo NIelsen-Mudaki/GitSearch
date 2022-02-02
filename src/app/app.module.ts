@@ -8,8 +8,7 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { UserComponent } from './user/user.component';
 
-import { NgProgressModule } from '@ngx-progressbar/core';
-import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
