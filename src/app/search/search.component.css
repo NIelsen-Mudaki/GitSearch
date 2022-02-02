@@ -1,3 +1,7 @@
 *{
     text-align: center;
 }
+.form-group{
+    border-top: 100px;
+    padding: 30px;
+}
