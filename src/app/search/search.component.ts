@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from "../user";
-import { HttpClient } from '@angular/common/http';
+import { User } from '../user'
 
 @Component({
   selector: 'app-search',
@@ -10,9 +9,13 @@ import { HttpClient } from '@angular/common/http';
 export class SearchComponent implements OnInit {
   
 
-  constructor(private http: HttpClient) { }
+  showResults() {
 
-  user!: User;
+    this.user[index].showDescription = !this.user[index].showDescription;
+  }
+
+  constructor() { }
+
 
   ngOnInit(): void {
     
