@@ -15,13 +15,7 @@ export class SearchComponent implements OnInit {
   user!: User;
 
   ngOnInit(): void {
-    interface ApiResponse{
-      name:string;
-    }
-    this.http.get<ApiResponse>("https://api.github.com/user").subscribe((data)=>{
-        // Succesful API request
-        this.user = new User(data.name)
-      })
+    
   }
 
   
