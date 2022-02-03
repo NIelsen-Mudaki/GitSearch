@@ -2,10 +2,28 @@
     <h2>Search on Github</h2>
     <form>
         <div class="form-group">
+            <label for="userName">GitHub Username</label>
 
             <input type="text" required placeholder=" Enter Github Username" id="name">
 
-            <button click = 'showResults()' type="submit" class="btn btn-outline">Search</button>
+            <button click = 'getUsers()' type="submit" class="btn btn-outline">Search</button>
         </div>
     </form>
+</div>
+
+<div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title animated fadeInRight" ><p class="text-info"> GitSearch Found: </p></h4>
+    <hr>
+    <!-- Text -->
+    <ul class=" card-text list-group list-group-flush">
+        <li class="list-group-item"> <i class="fas fa-user-friends"></i> 
+
+        <li class="list-group-item  "> <i class="fas fa-users f0c0"></i> 
+
+        <li class="list-group-item "> <i class="fas fa-folder-open"></i> 
+
+        <li class="list-group-item "> <i class="far fa-clock pr-1"></i> 
+    </ul>
 </div>

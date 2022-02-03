@@ -22,9 +22,9 @@ export class UserComponent implements OnInit {
     }
     this.http.get<ApiResponse>("https://api.github.com/user").subscribe((data: { name: string; })=>{
         // Succesful API request
-        this.user = new User(data.name)
+        this.user = new User()
       }), (err: any)=>{
-        this.user = new User("Never never give up!")
+        this.user = new User()
         console.log("An error occurred")
     }
   }
