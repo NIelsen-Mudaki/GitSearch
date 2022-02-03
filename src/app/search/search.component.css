@@ -2,6 +2,9 @@
     text-align: center;
 }
 .form-group{
-    border-top: 100px;
+    margin-top: 100px;
     padding: 30px;
+}
+.card-body{
+    margin-top: 100px;
 }

@@ -2,28 +2,41 @@
     <h2>Search on Github</h2>
     <form>
         <div class="form-group">
-            <label for="userName">GitHub Username</label>
+            <label for="userName"></label>
 
             <input type="text" required placeholder=" Enter Github Username" id="name">
 
-            <button click = 'getUsers()' type="submit" class="btn btn-outline">Search</button>
+            <button (click) = "getUsers" type="submit" class="btn btn-outline-primary">Search</button>
         </div>
     </form>
+
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <img src='{{users}}' class="img-fluid" alt="">
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title animated fadeInRight" ><p class="text-info"> GitSearch Found: </p></h4>
+                <hr>
+                <!-- Text -->
+                <ul class=" card-text list-group list-group-flush">
+                    <li class="list-group-item "> <i class="fas fa-user-friends"></i> Followers: {{ users }}</li>
+            
+                    <li class="list-group-item "> <i class="fas fa-users f0c0"></i> Following: {{ users }} </li>
+            
+                    <li class="list-group-item "> <i class="fas fa-folder-open"></i> No of public repos: {{ users }}</li>
+            
+                    <li class="list-group-item "> <i class="far fa-clock pr-1"></i> Joined on: {{ users }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>
 
-<div class="card-body">
 
-    <!-- Title -->
-    <h4 class="card-title animated fadeInRight" ><p class="text-info"> GitSearch Found: </p></h4>
-    <hr>
-    <!-- Text -->
-    <ul class=" card-text list-group list-group-flush">
-        <li class="list-group-item animated fadeInRight"> <i class="fas fa-user-friends"></i> Followers: </li>
-
-        <li class="list-group-item animated fadeInRight"> <i class="fas fa-users f0c0"></i> Following: </li>
-
-        <li class="list-group-item animated fadeInRight"> <i class="fas fa-folder-open"></i> No of public repos:</li>
-
-        <li class="list-group-item animated fadeInRight"> <i class="far fa-clock pr-1"></i> Joined on:</li>
-    </ul>
-</div>

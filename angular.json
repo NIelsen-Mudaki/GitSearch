@@ -103,8 +103,8 @@
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "dist/git-search",
-            "netlifyToken": "If our server is still running, we can now interact with our application on the web browser. We notice that the goal descriptions are no longer displayed and we have the button which toggles between displaying and hiding a goal description.",
-            "siteId": "[index] ensures that the function is executed for the goal at the specific index. "
+            "netlifyToken": "qON6hNEGWia1B8CQPPn70LFSm3xQ-Ttqm_pvbh3FPvo",
+            "siteId": "ef22718f-4a3a-48b8-9315-48459a2cc8c4"
           }
         }
       }

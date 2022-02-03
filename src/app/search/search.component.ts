@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter, Output } from '@angular/core';
 import { User } from '../user'
 import {ProfileService} from '../profile-service/profile.service';
 import { GithubService } from '../github-service/github.service';
@@ -14,9 +14,9 @@ import { repos } from "../repos";
 export class SearchComponent implements OnInit {
   loading!: boolean;
   profileRequest: any;
-  userName = 'Nielsen-Mudaki';
-  users: User[] = [];
-  repos: repos[] = [];
+  userName = '';
+  users!: User[];
+  repos!: repos[];
   
   
   constructor(private githubService: GithubService, private alertService: AlertService, private profileService: ProfileService) { }

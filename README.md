@@ -17,7 +17,7 @@ GitSearch is a website where users may enter a GitHub username into a form, subm
 
 ## Link to live site
 
-nielsen-mudaki.github.io/gitsearch/
+<https://upbeat-fermi-213da5.netlify.app/>
 
 ## Installation
 
